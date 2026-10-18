@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CS Molakisi, Les Petits Mignons – Toujours meilleurs depuis 1982</title>
+<meta name="description" content="Complexe scolaire à Ngaliema, Kinshasa : maternelle, primaire, éducation de base et humanités. Préinscription en ligne.">
+<link rel="icon" href="logo.webp" type="image/webp">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito+Sans:wght@400;600;700&display=swap">
+<style>
+:root{--royal:#1f4fe0;--navy:#0b2a7a;--gold:#ffc84d;--gold-d:#e8960c;--pink:#f43f8e;--sky:#7fb6f8;
+--bg:#f6f9ff;--surface:#fff;--ink:#14213d;--muted:#51607f;--line:#d9e3f7;--tint:#eaf1ff;
+--hf:"Baloo 2","Trebuchet MS",system-ui,sans-serif;--bf:"Nunito Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1330;--surface:#111d44;--ink:#eef3ff;--muted:#aebbdc;--line:#243566;--tint:#16275a}}
+:root[data-theme="dark"]{--bg:#0a1330;--surface:#111d44;--ink:#eef3ff;--muted:#aebbdc;--line:#243566;--tint:#16275a}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--bf)}
+img{max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--hf);line-height:1.15;margin:0 0 .5em}
+h2{font-size:clamp(1.9rem,4vw,2.6rem);color:var(--royal)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2{color:var(--sky)}}
+:root[data-theme="dark"] h2{color:var(--sky)}
+h3{font-size:1.35rem}
+p{margin:0 0 1em;max-width:68ch}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+header{position:sticky;top:0;z-index:20;background:#fff;color:var(--navy);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.bar{display:flex;align-items:center;gap:16px;min-height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--royal);font:800 1.1rem/1.1 var(--hf)}
+.brand img{width:48px;height:48px;background:#fff;border-radius:12px;padding:3px}
+nav{margin-left:auto}
+nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}
+nav a{display:block;padding:8px 10px;border-radius:8px;text-decoration:none;font-weight:600;font-size:.95rem}
+nav a:hover{background:#eaf1ff}
+nav a.cta{background:var(--royal);color:#fff;font-weight:700}nav a.cta:hover{background:var(--navy)}
+.burger{display:none;margin-left:auto;background:none;border:2px solid var(--royal);color:var(--royal);border-radius:8px;padding:6px 12px;font:600 .95rem var(--bf)}
+@media (max-width:860px){.burger{display:block}nav{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;box-shadow:0 10px 18px rgba(0,0,0,.12);padding:8px 20px 16px}nav.open{display:block}nav ul{flex-direction:column}nav a{padding:12px 8px}}
+.hero{position:relative;color:#fff;background:linear-gradient(135deg,var(--royal),var(--navy) 70%);padding:56px 0 120px;overflow:hidden}
+.hero::after{content:"";position:absolute;left:-5%;right:-5%;bottom:-1px;height:70px;background:var(--bg);border-radius:50% 50% 0 0/100% 100% 0 0;border-top:6px solid var(--gold)}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:32px;align-items:center;position:relative;z-index:1}
+.hero h1{font-size:clamp(2.6rem,7vw,4.6rem);font-weight:800;margin-bottom:.25em}
+.hero h1 span{display:block;color:var(--gold)}
+.hero p{font-size:1.2rem;color:#e3ebff}
+.badge{display:inline-block;background:var(--pink);color:#fff;font-weight:700;padding:6px 14px;border-radius:99px;margin-bottom:18px}
+.seal{justify-self:end;align-self:end;width:150px;background:#fff;border-radius:22px;padding:8px;filter:drop-shadow(0 18px 30px rgba(0,0,0,.35))}
+@media (max-width:760px){.hero .wrap{grid-template-columns:1fr}.seal{display:none}.hero-photo{width:100%;opacity:.4;-webkit-mask-image:linear-gradient(180deg,#000,transparent 90%);mask-image:linear-gradient(180deg,#000,transparent 90%)}}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{display:inline-block;padding:13px 24px;border-radius:12px;font:700 1.05rem var(--bf);text-decoration:none;border:2px solid transparent;cursor:pointer}
+.btn.pri{background:var(--gold);color:var(--navy)}
+.btn.pri:hover{background:#ffd877}
+.btn.sec{border-color:#fff;color:#fff}
+.btn.sec:hover{background:rgba(255,255,255,.14)}
+.btn.wa{background:#1fa855;color:#fff}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px}
+.card h3{color:var(--navy);margin-bottom:.3em}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .card h3{color:#fff}}
+:root[data-theme="dark"] .card h3{color:#fff}
+.card.cycle{border-top:6px solid var(--royal)}
+.card.cycle:nth-child(2){border-top-color:var(--pink)}
+.card.cycle:nth-child(3){border-top-color:var(--gold-d)}
+.card.cycle:nth-child(4){border-top-color:var(--navy)}
+.hours{display:inline-block;background:var(--tint);border-radius:8px;padding:3px 10px;font-weight:700;font-size:.95rem}
+.alt{background:var(--tint)}
+.values{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.values b{background:var(--navy);color:#fff;padding:6px 16px;border-radius:99px;font-weight:600}
+.about{display:grid;gap:36px;grid-template-columns:1fr 1fr}
+@media (max-width:760px){.about{grid-template-columns:1fr}}
+.empty{border:2px dashed var(--sky);border-radius:16px;padding:28px;color:var(--muted);background:var(--surface)}
+.opts{margin:.5em 0 0;padding-left:1.1em}
+form{display:grid;gap:16px;grid-template-columns:1fr 1fr;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:28px}
+@media (max-width:700px){form{grid-template-columns:1fr}}
+label{display:grid;gap:6px;font-weight:700}
+label.full,.full{grid-column:1/-1}
+input,select,textarea{font:inherit;padding:12px;border:2px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
+.note{background:var(--tint);border-left:6px solid var(--gold);padding:14px 18px;border-radius:8px;margin-bottom:24px;max-width:68ch}
+.gal{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}
+.ph{aspect-ratio:4/3;border-radius:14px;background:linear-gradient(135deg,var(--sky),var(--royal));display:grid;place-items:center;color:#fff;font-weight:600;text-align:center;padding:12px}
+.ph:nth-child(3n+2){background:linear-gradient(135deg,var(--pink),#b3226a)}
+.ph:nth-child(3n){background:linear-gradient(135deg,var(--gold),var(--gold-d));color:var(--navy)}
+dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:10px 18px}
+dt{font-weight:700;color:var(--royal)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) dt{color:var(--sky)}}
+:root[data-theme="dark"] dt{color:var(--sky)}
+dd{margin:0}
+footer{background:var(--navy);color:#cfdcff;padding:32px 0;text-align:center;font-size:.95rem}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;background:#1fa855;color:#fff;text-decoration:none;font-weight:700;padding:13px 20px;border-radius:99px;box-shadow:0 6px 18px rgba(0,0,0,.3)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.hero-photo{position:absolute;top:0;right:0;bottom:0;width:58%;background:url(hero.jpg) center 20%/cover no-repeat;-webkit-mask-image:linear-gradient(90deg,transparent,#000 55%);mask-image:linear-gradient(90deg,transparent,#000 55%);animation:settle 2.6s ease-out both}
+@keyframes settle{from{transform:scale(1.12);opacity:.3}to{transform:none;opacity:1}}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}}
+.hero h1,.hero p{text-shadow:0 2px 14px rgba(5,15,60,.55)}
+.hero .wrap>div>*{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+.hero .wrap>div>:nth-child(1){animation-delay:.1s}.hero .wrap>div>:nth-child(2){animation-delay:.25s}.hero .wrap>div>:nth-child(3){animation-delay:.4s}.hero .wrap>div>:nth-child(4){animation-delay:.55s}
+.seal{animation:rise .9s cubic-bezier(.2,.7,.2,1) .8s both}
+header{transition:box-shadow .25s}header.sc{box-shadow:0 4px 18px rgba(0,0,0,.3)}
+.card,.btn,.ph{transition:transform .25s ease,box-shadow .25s ease,background-color .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 26px rgba(11,42,122,.16)}
+.btn:hover{transform:translateY(-2px)}
+.ph:hover{transform:scale(1.03)}
+.js .rv{opacity:0;transform:translate(var(--x,0px),30px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.about>:first-child{--x:-36px}.about>:last-child{--x:36px}
+.js .gal>.rv{transform:translateY(26px) scale(.93)}
+section h2::after{content:"";display:block;width:56px;height:5px;border-radius:3px;background:var(--gold);margin-top:10px}
+header::after{content:"";position:absolute;left:0;bottom:-1px;height:4px;width:var(--p,0%);background:linear-gradient(90deg,var(--pink),var(--gold))}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}}
+</style>
+<script>document.documentElement.className+=" js"</script>
+</head>
+<body>
+<header>
+<div class="wrap bar">
+<a class="brand" href="#accueil"><img src="logo.webp" alt="Logo de l’école"><span>CS Molakisi<br>Les Petits Mignons</span></a>
+<button class="burger" id="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+<nav id="menu" aria-label="Navigation principale"><ul>
+<li><a href="#ecole">L’école</a></li><li><a href="#enseignement">Enseignement</a></li><li><a href="#vie">Vie à l’école</a></li><li><a href="#actualites">Actualités</a></li><li><a href="#galerie">Galerie</a></li><li><a href="#contact">Contact</a></li><li><a class="cta" href="#preinscription">Préinscription</a></li>
+</ul></nav>
+</div>
+</header>
+
+<main>
+<section class="hero" id="accueil">
+<div class="hero-photo" role="img" aria-label="Élèves de l’école entrant dans le bâtiment du CS Molakisi"></div>
+<div class="wrap">
+<div>
+<span class="badge">Inscriptions ouvertes 2026-2027</span>
+<h1>Mignons ! <span>Toujours meilleurs</span></h1>
+<p>Une école d’excellence à Ngaliema, pour un enseignement de qualité, en français et en anglais. Du préscolaire aux humanités, nous accompagnons chaque enfant depuis 1982.</p>
+<div class="btns"><a class="btn pri" href="#preinscription">Préinscrire mon enfant</a><a class="btn sec" href="#enseignement">Découvrir nos cycles</a></div>
+</div>
+<img class="seal" src="logo.webp" alt="Sceau de l’école : C.S. Molakisi, Les Petits Mignons, toujours meilleurs, depuis 1982">
+</div>
+</section>
+
+<section id="ecole">
+<div class="wrap about">
+<div>
+<h2>L’école</h2>
+<p>Le Complexe scolaire Molakisi, Les Petits Mignons a ouvert ses portes le 15 avril 1982. Notre devise tient en trois mots : toujours meilleurs.</p>
+<h3>Notre vision</h3>
+<p>Une école d’excellence pour un enseignement de qualité.</p>
+<h3>Notre mission</h3>
+<p>Assurer à chaque apprenant un parcours pédagogique rigoureux, qui favorise son épanouissement complet et sa réussite.</p>
+<h3>Nos valeurs</h3>
+<div class="values"><b>Discipline</b><b>Travail</b><b>Innovation</b></div>
+</div>
+<div>
+<h3>Mot de la direction</h3>
+<div class="empty">Le mot de la direction et la présentation de l’équipe seront publiés ici dès réception des textes et des photos.</div>
+</div>
+</div>
+</section>
+
+<section id="enseignement" class="alt">
+<div class="wrap">
+<h2>Enseignement</h2>
+<p>Quatre cycles, une même exigence. Les cours sont donnés en français et en anglais.</p>
+<div class="grid">
+<div class="card cycle"><h3>Maternelle</h3><span class="hours">Cours de 8h00 à 11h30</span></div>
+<div class="card cycle"><h3>Primaire</h3><span class="hours">Cours de 7h15 à 12h30</span></div>
+<div class="card cycle"><h3>Éducation de base</h3><p>7e et 8e années.</p><span class="hours">Cours de 7h15 à 13h00</span></div>
+<div class="card cycle"><h3>Humanités</h3><span class="hours">Cours de 7h15 à 13h00</span><ul class="opts"><li>Latin-philosophie</li><li>Pédagogie générale</li><li>Commerciale et gestion</li><li>Sciences</li></ul></div>
+</div>
+</div>
+</section>
+
+<section id="vie">
+<div class="wrap">
+<h2>Vie à l’école</h2>
+<p>Des espaces pensés pour apprendre, lire, bouger et se sentir en sécurité.</p>
+<div class="grid">
+<div class="card"><h3>Bibliothèque</h3><p>Un lieu calme pour lire, chercher et réviser.</p></div>
+<div class="card"><h3>Salle informatique</h3><p>Une salle moderne pour s’initier aux outils numériques.</p></div>
+<div class="card"><h3>Infirmerie</h3><p>Une prise en charge sur place pour les petits soucis du quotidien.</p></div>
+<div class="card"><h3>Terrain multisport</h3><p>Un terrain pour le sport et les récréations actives.</p></div>
+</div>
+</div>
+</section>
+
+<section id="preinscription" class="alt">
+<div class="wrap">
+<h2>Préinscription 2026-2027</h2>
+<div class="note">Remplissez ce formulaire, puis envoyez-le par WhatsApp à l’école. L’inscription est finalisée à l’école : les documents du dossier de l’élève se déposent en personne au secrétariat.</div>
+<form id="pre">
+<label>Nom et postnom de l’élève<input name="eleve" required autocomplete="off"></label>
+<label>Niveau demandé<select name="niveau" required><option value="">Choisir un niveau</option><option>Maternelle</option><option>Primaire</option><option>Éducation de base (7e-8e)</option><option>Humanités : Latin-philosophie</option><option>Humanités : Pédagogie générale</option><option>Humanités : Commerciale et gestion</option><option>Humanités : Sciences</option></select></label>
+<label>Nom du parent ou tuteur<input name="parent" required autocomplete="name"></label>
+<label>Téléphone du parent<input name="tel" type="tel" required autocomplete="tel"></label>
+<label class="full">Message (facultatif)<textarea name="msg" rows="3"></textarea></label>
+<div class="full"><button class="btn wa" type="submit">Envoyer ma préinscription par WhatsApp</button></div>
+</form>
+</div>
+</section>
+
+<section id="actualites">
+<div class="wrap">
+<h2>Actualités et circulaires</h2>
+<div class="empty">Les premières actualités de l’école apparaîtront ici chaque semaine, avec les circulaires à télécharger.</div>
+</div>
+</section>
+
+<section id="galerie" class="alt">
+<div class="wrap">
+<h2>Galerie</h2>
+<div class="gal">
+<div class="ph">Façade de l’école</div><div class="ph">Salles de classe</div><div class="ph">Terrain multisport</div><div class="ph">Bibliothèque</div><div class="ph">Salle informatique</div><div class="ph">Nos élèves</div>
+</div>
+<p style="margin-top:16px;color:var(--muted)">Photos et vidéos à venir.</p>
+</div>
+</section>
+
+<section id="contact">
+<div class="wrap">
+<h2>Contact</h2>
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
+<div class="card"><dl>
+<dt>Adresse</dt><dd>Av. Saorona 2, Q/ Musey, C/ Ngaliema, Kinshasa</dd>
+<dt>Repère</dt><dd>Centre supérieur militaire / église de La Borne Sola</dd>
+<dt>Téléphone</dt><dd><a href="tel:+243893111161">+243 893 111 161</a></dd>
+<dt>WhatsApp</dt><dd><a href="https://wa.me/243893111161">+243 893 111 161</a></dd>
+<dt>Email</dt><dd><a href="mailto:csmolakisilespetitsmignons@gmail.com">csmolakisilespetitsmignons@gmail.com</a></dd>
+<dt>Facebook</dt><dd>Complexe scolaire Molakisi, Les Petits Mignons</dd>
+</dl></div>
+<div class="card"><h3>Horaires du secrétariat</h3><p><span class="hours">7h15 à 14h30</span></p><p>Pour finaliser une inscription ou poser une question, passez nous voir au secrétariat.</p><a class="btn pri" href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Saorona+2+Musey+Ngaliema+Kinshasa" target="_blank" rel="noopener">Voir sur Google Maps</a></div>
+</div>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap">© 2026 Complexe scolaire Molakisi, Les Petits Mignons. Mignons ! Toujours meilleurs.</div></footer>
+<a class="fab" href="https://wa.me/243893111161" target="_blank" rel="noopener" aria-label="Écrire à l’école sur WhatsApp">WhatsApp</a>
+
+<script>
+var WA="243893111161";
+var hd=document.querySelector("header");
+addEventListener("scroll",function(){hd.classList.toggle("sc",scrollY>8);var m=document.documentElement.scrollHeight-innerHeight;hd.style.setProperty("--p",(m>0?Math.min(100,scrollY/m*100):0)+"%")},{passive:true});
+(function(){var els=document.querySelectorAll("main section:not(.hero) .wrap>*:not(.grid):not(.gal),.grid>*,.gal>*");
+if(!("IntersectionObserver" in window)){return}
+var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){var el=x.target;el.classList.add("in");io.unobserve(el);
+setTimeout(function(){el.classList.remove("rv","in");el.style.removeProperty("--d")},1400)}})},{threshold:.12,rootMargin:"0px 0px -8% 0px"});
+els.forEach(function(el,i){el.classList.add("rv");el.style.setProperty("--d",(Math.min(Array.prototype.indexOf.call(el.parentNode.children,el),5)*.09)+"s");io.observe(el)})})();
+var b=document.getElementById("burger"),m=document.getElementById("menu");
+b.addEventListener("click",function(){var o=m.classList.toggle("open");b.setAttribute("aria-expanded",o)});
+m.addEventListener("click",function(e){if(e.target.tagName==="A"){m.classList.remove("open");b.setAttribute("aria-expanded","false")}});
+document.getElementById("pre").addEventListener("submit",function(e){
+e.preventDefault();var f=e.target;
+var t="Bonjour, je souhaite préinscrire mon enfant pour 2026-2027.\nÉlève : "+f.eleve.value+"\nNiveau : "+f.niveau.value+"\nParent ou tuteur : "+f.parent.value+"\nTéléphone : "+f.tel.value+(f.msg.value?"\nMessage : "+f.msg.value:"");
+window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(t),"_blank","noopener");
+});
+</script>
+</body>
+</html>
