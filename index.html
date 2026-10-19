@@ -33,7 +33,7 @@ nav{margin-left:auto}
 nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}
 nav a{display:block;padding:8px 10px;border-radius:8px;text-decoration:none;font-weight:600;font-size:.95rem}
 nav a:hover{background:#eaf1ff}
-nav a.cta{background:var(--royal);color:#fff;font-weight:700}nav a.cta:hover{background:var(--navy)}
+nav a.cta{background:var(--royal);color:#fff;font-weight:700;border-radius:12px;padding:10px 18px;box-shadow:0 4px 0 var(--navy);transition:transform .15s ease,box-shadow .15s ease}nav a.cta:hover{background:var(--royal);transform:translateY(-2px);box-shadow:0 6px 0 var(--navy)}nav a.cta:active{transform:translateY(3px);box-shadow:0 1px 0 var(--navy)}
 .burger{display:none;margin-left:auto;background:none;border:2px solid var(--royal);color:var(--royal);border-radius:8px;padding:6px 12px;font:600 .95rem var(--bf)}
 @media (max-width:860px){.burger{display:block}nav{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;box-shadow:0 10px 18px rgba(0,0,0,.12);padding:8px 20px 16px}nav.open{display:block}nav ul{flex-direction:column}nav a{padding:12px 8px}}
 .hero{position:relative;color:#fff;background:linear-gradient(135deg,var(--royal),var(--navy) 70%);padding:56px 0 120px;overflow:hidden}
@@ -179,11 +179,18 @@ a,button,select{cursor:pointer}
 .fact b{display:block;font:800 clamp(2.4rem,5vw,3.2rem)/1 var(--hf);color:var(--royal)}
 .fact:nth-child(2) b{color:var(--pink)}.fact:nth-child(3) b{color:#b36a00}.fact:nth-child(4) b{color:var(--navy)}
 .fact span{display:block;margin-top:8px;color:var(--muted);font-weight:600}
-.cta{padding:56px 0;background:linear-gradient(135deg,var(--royal),var(--navy));color:#fff}
-.cta .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px}
-.cta h2{color:#fff}.cta p{margin:0;color:#dbe6ff}.cta .btns{margin:0}
+.band{padding:56px 0;background:linear-gradient(135deg,var(--royal),var(--navy));color:#fff}
+.band .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px}
+.band h2{color:#fff}.band p{margin:0;color:#dbe6ff}.band .btns{margin:0}
 .js .grid>.rv{transition-duration:.5s;transition-timing-function:cubic-bezier(.34,1.4,.64,1)}
 @media (max-width:860px){nav a{display:flex;align-items:center;min-height:44px}}
+nav ul{align-items:center}
+.mos{display:block;column-width:230px;column-gap:14px}
+.t{display:block;margin:0 0 14px;break-inside:avoid;grid-row:auto}
+.t.r0{aspect-ratio:4/3}.t.r1{aspect-ratio:1/1}.t.r2{aspect-ratio:3/4}
+.t.z{aspect-ratio:auto}
+.t.z img{position:static;height:auto;display:block}
+@media (max-width:760px){.mos{column-width:auto;column-count:2;column-gap:10px}.t{margin-bottom:10px}}
 </style>
 <script>document.documentElement.className+=" js"</script>
 </head>
@@ -292,7 +299,7 @@ a,button,select{cursor:pointer}
 </div>
 </section>
 
-<section class="cta"><div class="wrap">
+<section class="band"><div class="wrap">
 <div><h2>Offrez à votre enfant un bon départ</h2><p>Inscriptions ouvertes pour 2026-2027. Préinscrivez-vous en ligne, puis finalisez à l’école.</p></div>
 <div class="btns"><a class="btn pri" href="#preinscription">Préinscrire mon enfant</a><a class="btn sec" href="https://wa.me/243893111161" target="_blank" rel="noopener">Nous écrire sur WhatsApp</a></div>
 </div></section>
@@ -337,7 +344,7 @@ var G=[
 var F="Toutes",N=8,gm=document.getElementById("gm"),gf=document.getElementById("gf"),mo=document.getElementById("gmore");
 function vis(){return G.filter(function(g){return F==="Toutes"||g.c===F})}
 function chips(){var cs=["Toutes"];G.forEach(function(g){if(cs.indexOf(g.c)<0)cs.push(g.c)});gf.innerHTML=cs.map(function(k){return '<button'+(k===F?' class="on"':'')+'>'+k+'</button>'}).join("")}
-function draw(p){var v=vis();gm.innerHTML=v.slice(0,N).map(function(g,i){var cl=(i%6===0?" w":"")+(i%4===1?" h":"")+(g.src?" z":"");var an=i<p?"animation:none":"animation-delay:"+((i-p)%8)*.05+"s";return '<figure class="t'+cl+'" data-i="'+i+'" style="'+an+'"'+(g.src?' tabindex="0"':'')+'>'+(g.src?'<img loading="lazy" src="'+g.src+'" alt="'+g.t+'"><figcaption>'+g.t+'</figcaption>':'<div class="pl">'+g.t+'</div>')+'</figure>'}).join("");mo.hidden=v.length<=N}
+function draw(p){var v=vis();gm.innerHTML=v.slice(0,N).map(function(g,i){var cl=" r"+(i%3)+(g.src?" z":"");var an=i<p?"animation:none":"animation-delay:"+((i-p)%8)*.05+"s";return '<figure class="t'+cl+'" data-i="'+i+'" style="'+an+'"'+(g.src?' tabindex="0"':'')+'>'+(g.src?'<img loading="lazy" src="'+g.src+'" alt="'+g.t+'"><figcaption>'+g.t+'</figcaption>':'<div class="pl">'+g.t+'</div>')+'</figure>'}).join("");mo.hidden=v.length<=N}
 gf.onclick=function(e){if(e.target.tagName==="BUTTON"){F=e.target.textContent;N=8;chips();draw(0)}};
 mo.onclick=function(){var o=N;N+=8;draw(o)};
 var lb=document.getElementById("lb"),li=document.getElementById("lbi"),lc=document.getElementById("lbc"),L=[],k=0,lx=0;
